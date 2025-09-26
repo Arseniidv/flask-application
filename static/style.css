@@ -1,0 +1,230 @@
+/* ===== БАЗОВЫЕ НАСТРОЙКИ ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===== ХЕДЕР ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 15px 50px;
+}
+
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header .menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header .menu a:hover {
+    color: #ff9800;
+}
+
+header .auth button {
+    margin-left: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #ff9800;
+    color: white;
+    transition: 0.3s;
+}
+
+header .auth button:hover {
+    background: #e68900;
+}
+
+/* ===== ГЛАВНАЯ + КАТАЛОГ УСЛУГ ===== */
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+.catalog {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 250px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.card button {
+    background: #222;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: #ff9800;
+}
+
+/* ===== ФОРМЫ (LOGIN, REGISTER) ===== */
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #222;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #ff9800;
+}
+
+/* ===== ПРОФИЛЬ ===== */
+.profile {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.profile img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile h2 {
+    margin-bottom: 10px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 180px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== ФУТЕР ===== */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ff9800;
+}
+
+/* ===== АДАПТИВ ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .catalog {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}

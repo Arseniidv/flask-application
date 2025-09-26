@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Главная</title>
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<header>
+  <div class="logo">LOGO</div>
+  <nav class="menu">
+      <a href="/">Главная</a>
+      <a href="/services">Услуги</a>
+      <a href="/masters">Мастера</a>
+      <a href="/profile">Личный кабинет</a>
+      <a href="/login">Вход</a>
+      <a href="/register">Регистрация</a>
+
+  </nav>
+  <div class="auth">
+    <a href="login"><button>Вход</button></a>
+    <a href="register"><button>Регистрация</button></a>
+  </div>
+</header>
+
+<main>
+  <h1>Наши услуги</h1>
+  <div class="catalog">
+    <div class="card">
+      <img src="{{url_for('static', filename='imagePy.jpeg')}}" alt="Услуга 1">
+      <h3> Python bots</h3>
+      <p>разработка персонального Python bot </p>
+      <button>Подробнее</button>
+    </div>
+    <div class="card">
+              <img src="{{url_for('static', filename='web.png')}}" alt="Услуга 1">
+      <h3>Разработка сайта под ключ </h3>
+      <p>Пожаговое ведение вашего сайта</p>
+      <button>Подробнее</button>
+    </div>
+    <div class="card">
+      <img src="../static/images/service3.jpg" alt="Услуга 3">
+      <h3>Сервер для вашего бизнеса</h3>
+      <p>Предаставляем сервер под ваши нужды</p>
+      <button>Подробнее</button>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 — Мой сайт</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Мастера</title>
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<header>
+  <div class="logo">LOGO</div>
+  <nav class="menu">
+    <a href="/">Главная</a>
+    <a href="profile">Личный кабинет</a>
+    <a href="masters">Мастера</a>
+    <a href="services">Услуги</a>
+    <a href="#">Контакты</a>
+  </nav>
+  <div class="auth">
+    <a href="login"><button>Вход</button></a>
+    <a href="register"><button>Регистрация</button></a>
+  </div>
+</header>
+
+<main>
+  <h1>Наши мастера</h1>
+  <div class="catalog">
+    <div class="card">
+      <img src="{{url_for('static',filename='profile image — копия.jpeg')}}" alt="Анна">
+      <h3>Анна Иванова</h3>
+      <p>Маникюр</p>
+    </div>
+    <div class="card">
+      <img src=".{./static/images/master.jpeg}" alt="Ольга">
+      <h3>Ольга Петрова</h3>
+      <p>Парикмахер</p>
+    </div>
+    <div class="card">
+      <img src="../static/images/master.jpeg" alt="Елена">
+      <h3>Елена Сидорова</h3>
+      <p>Косметолог</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 — Мой сайт</p>
+</footer>
+</body>
+</html>
