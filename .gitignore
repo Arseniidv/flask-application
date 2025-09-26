@@ -6,3 +6,6 @@ venv/
 
 name README.md
 
+.venv
+__pycache__/
+*.pyc
